@@ -1,0 +1,56 @@
+SECTION:
+public.get_section(int4),
+public.get_sections(),
+Тут лежат все функции(ну или почти все), удобно при выдаче прав
+
+
+public.get_sections_detail(),
+public.add_section(text, int4, int4),
+public.add_section(text, int4),
+public.update_section(int4, text, int4),
+public.update_section(int4, int4, int4),
+public.delete_section(int4, int4),
+
+FORUM:
+public.get_forums(int4),
+public.add_forum(int4, text, int4, int4),
+public.add_forum(int4, text, int4),
+public.update_forum(int4, text, int4),
+public.update_forum(int4, int4, int4),
+public.update_forum_img(int4, text, int4),
+public.update_forum_order(int4, text, int4),
+
+POST:
+public.get_posts(int4),
+public.get_posts(int4, int4, int4),
+public.add_post(int4, int4, text),
+public.delete_post(int4, int4),
+public.update_post(int4, int4, text),
+
+TOPIC:
+public.get_topics(int4),
+public.get_topics(int4, int4, int4),
+public.add_topic(int4, int4, text, text),
+public.delete_topic(int4, int4),
+public.update_topic_close(int4, int4),
+public.update_topic_pin(int4, int4),
+public.update_topic_header(int4, int4, text),
+public.update_topic_message(int4, int4, text),
+
+USER:
+public.get_user_detail(int4),
+public.get_all_user_detail(int4),
+public.get_account_img(int4),
+public.login(text, text),
+public.register(text, text, text),
+public.update_account_img(int4, text),
+
+
+
+UTILITY(not really needed for grant):
+public.is_admin(int4);
+public.is_topic_closed(int4);
+public.is_user_exist(int4);
+public.can_edit_post(int4, int4);
+public.can_edit_topic(int4, int4);
+
